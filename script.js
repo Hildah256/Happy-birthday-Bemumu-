@@ -1,19 +1,18 @@
-let currentPage = 0;
-const pages = document.querySelectorAll(".page");
+let pages = document.querySelectorAll(".page");
+let current = 0;
 
-function showPage(index) {
+function showPage(i) {
   pages.forEach(p => p.classList.remove("active"));
-  pages[index].classList.add("active");
+  pages[i].classList.add("active");
 }
 
 function nextPage() {
-  currentPage++;
-  if (currentPage < pages.length) {
-    showPage(currentPage);
+  current++;
+  if (current < pages.length) {
+    showPage(current);
   }
 }
 
-function playSong() {
-  alert("🎵 Playing Kinoti - You (YouTube will open/stream depends on browser)");
+function playMusic() {
   window.open("https://www.youtube.com/results?search_query=Kinoti+You", "_blank");
 }

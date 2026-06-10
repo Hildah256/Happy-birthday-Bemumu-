@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy Birthday Bemumu 🎂</title>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Bemumu 🎂</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #ff9a9e, #fad0c4);
-      text-align: center;
-      color: #fff;
-    }
+        h1 {
+            background: #ff69b4;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
 
-    h1 {
-      margin-top: 30px;
-      font-size: 40px;
-    }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
 
-    p {
-      font-size: 18px;
-    }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-      padding: 20px;
-      margin-top: 20px;
-    }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-  </style>
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>🎂 Happy Birthday Bemumu 🎂</h1>
-  <p>Wishing you love, happiness, and the best year ahead 💖</p>
+    <h1>🎉 Happy Birthday Bemumu 🎉</h1>
 
-  <div class="gallery">
+    <h2>💖 Memories Gallery</h2>
 
-    <!-- 👇 ADD YOUR IMAGE FILE NAMES HERE -->
-    <img src="WA0001.jpg">
-    <img src="WA0026.jpg">
-    <img src="WA0030.jpg">
-      img src="WA0037jpg">
-      img src="WA0009jpg">
-      img src="WA0003jpg">
-      img src="WA0006jpg">
+    <div class="gallery">
 
-  </div>
+        <div class="card">
+            <img src="IMG-20251216-WA0030.jpg" alt="Baby photo">
+            <div class="label">Baby photo</div>
+        </div>
+
+        <div class="card">
+            <img src="IMG-20251216-WA0037.jpg" alt="Present Bemumu">
+            <div class="label">Present Bemumu</div>
+        </div>
+
+        <div class="card">
+            <img src="IMG-20260211-WA0009.jpg" alt="Present Bemumu">
+            <div class="label">Present Bemumu</div>
+        </div>
+
+        <div class="card">
+            <img src="IMG-20260608-WA0003.jpg" alt="School Bemumu">
+            <div class="label">School Bemumu</div>
+        </div>
+
+        <div class="card">
+            <img src="IMG-20260608-WA0006.jpg" alt="Solo Bemumu">
+            <div class="label">Solo Bemumu (Smiling)</div>
+        </div>
+
+        <div class="card">
+            <img src="Screenshot_20260529-230507~2.png" alt="Couple Bemumu">
+            <div class="label">Couple Bemumu</div>
+        </div>
+
+        <div class="card">
+            <img src="Screenshot_20260529-230521.png" alt="Couple Bemumu">
+            <div class="label">Couple Bemumu</div>
+        </div>
+
+    </div>
 
 </body>
 </html>

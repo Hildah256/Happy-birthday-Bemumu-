@@ -1,18 +1,52 @@
 let pages = document.querySelectorAll(".page");
 let current = 0;
 
+let slideshowStarted = false;
+let musicStarted = false;
+
+// show page
 function showPage(i) {
   pages.forEach(p => p.classList.remove("active"));
   pages[i].classList.add("active");
 }
 
-function nextPage() {
-  current++;
-  if (current < pages.length) {
-    showPage(current);
+
+function startExperience() {
+  startMusic();
+  startSlideshow();
+}
+
+
+function startMusic() {
+  if (musicStarted) return;
+
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.play().catch(err => {
+      console.log("Music blocked by browser until user interaction");
+    });
+    musicStarted = true;
   }
 }
 
-function playMusic() {
-  window.open("https://www.youtube.com/results?search_query=Kinoti+You", "_blank");
+
+function startSlideshow() {
+  if (slideshowStarted) return;
+
+  slideshowStarted = true;
+
+  setInterval(() => {
+    if (current < pages.length - 1) {
+      current++;
+      showPage(current);
+    }
+  }, 4000);
+}
+
+
+function nextPage() {
+  if (current < pages.length - 1) {
+    current++;
+    showPage(current);
+  }
 }

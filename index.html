@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Happy Birthday Bemumu 🎂</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff0f5;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            background: #ff69b4;
-            color: white;
-            padding: 20px;
-            margin: 0;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 30px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 10px;
-            width: 250px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .label {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Happy Birthday Bemumu ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🎉 Happy Birthday Bemumu 🎉</h1>
+<!-- PAGE 1 -->
+<section class="page active">
+  <img src="IMG-20260608-WA0006.jpg" class="hero-img">
+  <h1>Happy Birthday Bemumu ❤️</h1>
+  <p>Today is all about you.</p>
+  <button onclick="nextPage()">Scroll down. I have something to show you</button>
+</section>
 
-    <h2>💖 Memories Gallery</h2>
+<!-- PAGE 2 -->
+<section class="page">
+  <img src="IMG-20251216-WA0030.jpg">
+  <h2>Before the beard. Before responsibilities.</h2>
+  <p>Bemumu v1.0 successfully located.</p>
+</section>
 
-    <div class="gallery">
+<!-- PAGE 3 -->
+<section class="page">
+  <img src="IMG-20260608-WA0003.jpg">
+  <h2>Student Edition 📚</h2>
+  <p>Dreams loading... Character development in progress.</p>
+</section>
 
-        <div class="card">
-            <img src="IMG-20251216-WA0030.jpg" alt="Baby photo">
-            <div class="label">Baby photo</div>
-        </div>
+<!-- PAGE 4 -->
+<section class="page">
+  <img src="IMG-20251216-WA0026.jpg">
+  <h2>Family ❤️</h2>
+  <p>
+    Long before I knew you, there were people loving you,
+    guiding you, and shaping you.
+  </p>
+</section>
 
-        <div class="card">
-            <img src="IMG-20251216-WA0037.jpg" alt="Present Bemumu">
-            <div class="label">Present Bemumu</div>
-        </div>
+<!-- PAGE 5 -->
+<section class="page">
+  <img src="IMG-20260211-WA0009.jpg">
+  <h2>Present Day Bemumu</h2>
+  <p>Somewhere along the way, this boy became incredible.</p>
+</section>
 
-        <div class="card">
-            <img src="IMG-20260211-WA0009.jpg" alt="Present Bemumu">
-            <div class="label">Present Bemumu</div>
-        </div>
+<!-- PAGE 6 -->
+<section class="page">
+  <img src="Screenshot_20260529-230507~2.png">
+  <h2>Us ❤️</h2>
+  <p>
+    I didn’t know I’d meet my best friend, my safe haven,
+    my joy, my happiness.
+  </p>
+</section>
 
-        <div class="card">
-            <img src="IMG-20260608-WA0003.jpg" alt="School Bemumu">
-            <div class="label">School Bemumu</div>
-        </div>
+<!-- PAGE 7 -->
+<section class="page">
+  <h2>Reasons I Love You 💙</h2>
 
-        <div class="card">
-            <img src="IMG-20260608-WA0006.jpg" alt="Solo Bemumu">
-            <div class="label">Solo Bemumu (Smiling)</div>
-        </div>
+  <div class="card">Because you're kind.</div>
+  <div class="card">Because you're my safe haven.</div>
+  <div class="card">Because you're my best friend.</div>
+  <div class="card">Because life feels lighter with you.</div>
+</section>
 
-        <div class="card">
-            <img src="Screenshot_20260529-230507~2.png" alt="Couple Bemumu">
-            <div class="label">Couple Bemumu</div>
-        </div>
+<!-- PAGE 8 -->
+<section class="page">
+  <h2>😂 Important Findings</h2>
+  <div class="card">Missing Bemumu detected after 3 seconds.</div>
+  <div class="card">Heart successfully stolen.</div>
+  <div class="card">No unsubscribe option available.</div>
+  <div class="card">Escape attempt failed.</div>
+</section>
 
-        <div class="card">
-            <img src="Screenshot_20260529-230521.png" alt="Couple Bemumu">
-            <div class="label">Couple Bemumu</div>
-        </div>
+<!-- PAGE 9 -->
+<section class="page">
+  <h2>Emergency Buttons 🫂</h2>
 
-    </div>
+  <button onclick="alert('Sending one immediately... 🫂')">Need a hug?</button>
 
+  <button onclick="alert('Loading... Yes. Very much ❤️')">Does Hildah love me?</button>
+
+  <button onclick="alert('Why do you think this website exists? 😂')">Am I handsome?</button>
+</section>
+
+<!-- FINAL PAGE -->
+<section class="page">
+  <h1>Happy Birthday Bemumu ❤️</h1>
+
+  <p class="letter">
+    Thank you for every laugh.<br>
+    Thank you for every conversation.<br>
+    Thank you for being my safe haven.<br>
+    Thank you for being my happiness.<br><br>
+
+    I hope this year brings you peace, success, love, and everything your heart desires.<br><br>
+
+    Love,<br>
+    Hildah 💙
+  </p>
+
+  <button onclick="playSong()">🎵 Play “You” – Kinoti</button>
+</section>
+
+<audio id="music" loop>
+  <source src="https://www.youtube.com/embed/VIDEO_ID" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to bottom right, #ffe6f0, #e6f0ff);
+  overflow: hidden;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+img {
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  color: #ff4da6;
+}
+
+.card {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4da6;
+  color: white;
+  cursor: pointer;
+}
